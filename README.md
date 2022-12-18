@@ -1,4 +1,9 @@
-# Regression Model for Car prediction
+# Car Price Prediction by Supervised Machine Learning - Regression
+
+<p align="center">
+     <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/208312859-9e236d65-8ac8-4f88-8d32-7e0a61ef6336.jpg">
+</p>
+
 ## Table of Contents
 
 ### 1.Problem Statement
@@ -32,9 +37,11 @@ They have contracted an automobile consulting company to understand the factors 
 
 Based on various market surveys, the consulting firm has gathered a large dataset of different types of cars across the Americal market.
 
-   ![]()![images](https://user-images.githubusercontent.com/119164734/208312859-9e236d65-8ac8-4f88-8d32-7e0a61ef6336.jpg)
+## 2.Installing and Importing Packages
 
-
+<p align="center">
+  <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/208314443-2ef2756b-470c-4619-b7a4-1a48bf3c6cd3.png">
+</p>
 
 
 
