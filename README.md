@@ -5,15 +5,15 @@ Problem Statement
 
 2.Installing and Importing Packages
 
-2.1 Importing Libraries
+  2.1 Importing Libraries
   
 3.Loading Data
 
 4.Data Acquistititon and Description
 
-4.1 Description of the Dataset
+  4.1 Description of the Dataset
  
-4.2 Data Information
+  4.2 Data Information
 
 5.Data Wrangling
  
