@@ -38,10 +38,26 @@ They have contracted an automobile consulting company to understand the factors 
 Based on various market surveys, the consulting firm has gathered a large dataset of different types of cars across the Americal market.
 
 ## 2.Installing and Importing Packages
+The following libaries and tools are used in the project.
 
 <p align="center">
   <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/208314443-2ef2756b-470c-4619-b7a4-1a48bf3c6cd3.png">
 </p>
+
+- **Pandas**: Importing for panel data analysis
+
+- **Numpy**: For numerical python operations
+
+- **Matplotlib (Pyplot)**: A popular plotting library used along with pandas
+
+- **Seaborn**: A library, built on matplotlib, to create beautiful plots
+
+- **Scikit Learn**: To perform all tasks realted to Machine Learning
+
+
+
+
+
 
 
 
