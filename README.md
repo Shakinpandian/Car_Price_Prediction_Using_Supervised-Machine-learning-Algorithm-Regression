@@ -8,11 +8,17 @@ Problem Statement
   2.1 Importing Libraries
   
 3. Loading Data
+
 4. Data Acquistititon and Description
+ 
  4.1 Description of the Dataset
+ 
  4.2 Data Information
+
 5. Data Wrangling
+ 
  5.1 Data Cleaning
+
 6. Exploratory Data Analysis
  6.1 Univariate Analysis
  6.2 Bivariate Analysis
