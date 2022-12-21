@@ -39,12 +39,11 @@ Based on various market surveys, the consulting firm has gathered a large datase
 
 ## 2.Installing and Importing Packages
 The following libaries and tools are used in the project.
-
 <p align="center">
   <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/208314443-2ef2756b-470c-4619-b7a4-1a48bf3c6cd3.png">
 </p>
 
-- **Pandas**: Importing for panel data analysis
+- **Pandas**: Importing for panel data analysis                     
 
 - **Numpy**: For numerical python operations
 
@@ -58,6 +57,31 @@ The following libaries and tools are used in the project.
 
 - The dataset has been collected from the **Kaggle.com** and the dataset in **CSV** format.
 - To load the data **pd.read_csv("data//path")**.
+- From the data **205 rows** and **26 features** are gained.
+
+# 4.Data Acquistititon and Description  
+<p align="right">
+        <img width="200" height="100" src="https://user-images.githubusercontent.com/119164734/208954684-6dc35945-f2e2-4fe9-  8638-c255b3ad9dd1.jpg")>
+</p>
+                                                                                  
+| Column Name | Description |                     
+|---|---|
+|Car_ID|Unique ID for each cars|
+|Wheelbase|Distance between the centre of the front wheelsand the centre of the rear wheels|
+|Carlength|Length of the car|
+|Carwidth|Wigth of the car|
+|Carheight|Height of the car|
+|Curbweight|Weight of the Car, including full petrol tank|                         
+|Enginesize|Size of the Engine|
+|Boreratio|The ratio of bore to stroke|
+|Stroke|Type of stroke|
+|Compressionratio|The ratio between the volume of the cylinder and combustion chamber |
+|Horsepower| The metric used to indicate the power produced by a car's engine |
+|Peak Rpm|Maximum torque will occur at different rpms for every engine|
+|City Mpg|The score a car will get on average in city conditions|
+|Highway Mpg|The score a car will get on average in city conditions|
+|Price|Price of the car|
+
 
 
 
