@@ -54,6 +54,11 @@ The following libaries and tools are used in the project.
 
 - **Scikit Learn**: To perform all tasks realted to Machine Learning
 
+# 3.Loading Data
+
+- The dataset has been collected from the **Kaggle.com** and the dataset in **CSV** format.
+- To load the data **pd.read_csv("data//path")**.
+
 
 
 
