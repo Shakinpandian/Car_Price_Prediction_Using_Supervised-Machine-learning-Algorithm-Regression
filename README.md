@@ -60,9 +60,6 @@ The following libaries and tools are used in the project.
 - From the data **205 rows** and **26 features** are gained.
 
 # 4.Data Acquistititon and Description  
-<p align="right">
-        <img width="200" height="100" src="https://user-images.githubusercontent.com/119164734/208954684-6dc35945-f2e2-4fe9-  8638-c255b3ad9dd1.jpg")>
-</p>
                                                                                   
 | Column Name | Description |                     
 |---|---|
@@ -81,6 +78,25 @@ The following libaries and tools are used in the project.
 |City Mpg|The score a car will get on average in city conditions|
 |Highway Mpg|The score a car will get on average in city conditions|
 |Price|Price of the car|
+
+- Total 18 Numerical datatype and 8 object datatype are recorded.
+- The average  of the Price is found to be **$13276.7**.
+- The maximum and minimum value of the Peak Rpm are **6650** and **4150**.
+
+# Data Wrangling
+
+In this section, we cleaned out our data based on the information retrieved from the previous observations.
+
+Hence, we performed the following subtasks.
+
+- Checking for missing values and manipulating them.
+
+- Checking the datatype.
+
+- Checking the Spelling Correction.
+
+# 6.Exploratory Data Analysis
+
 
 
 
