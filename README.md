@@ -97,6 +97,80 @@ Hence, we performed the following subtasks.
 
 # 6.Exploratory Data Analysis
 
+<p align="center">
+  <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/208973853-2ff76988-ab78-4ae1-a465-8d2e9e1b48e1.png">
+</p>
+
+## Observation:
+- It show the usage of gas is higher than the fuel in Americian market.
+- Highest number of cylinder has been used was four and four door cars are favoured.
+- Engine type of ohc has high demand and huge sales in market.
+- Car body of sedan has the most used product in the market.
+- Distribution shows that the 85% of price lies between 5000 and 20000 and price distriibution is Right-Skew.
+
+# 7. Data Postprocessing
+
+## Encoding Categorical Variable
+- Encoding is a technique of converting categorical variables into numerical values so that it could be easily fitted to a machine learning model.
+I have used the Label / Ordinal encoding.
+
+**from sklearn.preprocessing import LabelEncoder**
+
+**Label=LabelEncoder()**
+
+**data_1["Fuel Type"]=Label.fit_transform(data_1["Fuel Type"])**
+
+# Separating train and test data:
+- The train-test split is used to estimate the performance of machine learning algorithms that are applicable for prediction-based Algorithms/Applications. This method is a fast and easy procedure to perform such that we can compare our own machine learning model results to machine results.
+
+**from sklearn.model_selection import train_test_split**
+
+**X_train,X_test,Y_train,Y_test=train_test_split(X,Y,test_size=0.3,random_state=45)**
+
+<p align="center">
+  <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/208979910-33a3af21-734b-4ef9-8cc3-b4c51efed7af.png">
+</p>
+
+- The dataset has been separated into 70% train data and 30% test data.
+
+# Feature Scaling:
+- Feature Scaling is a technique to standardize the independent features present in the data in a fixed range. So the X_train and X_test data should standardize for easy preformance.In standardizing, the mean and range should br 0 to 1.
+
+**from sklearn.preprocessing import StandardScaler**
+
+**Scaler=StandardScaler()**
+
+**X_train_Scaler=Scaler.fit_transform(X_train)**
+
+**X_test_Scaler=Scaler.transform(X_test)**
+
+
+# 8.Modeling
+## Defining baseline model:
+A baseline model is essentially a simple model that acts as a reference in a machine learning project. Its main function is to contextualize the results of trained models. Baseline models usually lack complexity and may have little predictive power.
+
+Number of Machine algorithm has been used for baseline model to choose the **Low overfitting**
+
+#### 1) KNeighbors Regression
+
+<p align="center">
+     <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/208985398-19f15038-7c46-4ea1-9e91-8780d71c82f2.png">
+</p>
+
+- KNN algorithm can be used for both classification and regression problems. 
+- The KNN algorithm uses ‘feature similarity’ to predict the values of any new data points.
+- If K=3, it will select three values near to them.
+- The average of these data points is the final prediction for the new point. Here, we have weight of ID11 = (77+72+60)/3 = 69.66 kg.
+- **Euclidean Distance**: Euclidean distance is calculated as the square root of the sum of the squared differences between a new point (x) and an existing point (y).
+
+<p align="center">
+     <img width="200" height="100" src="https://user-images.githubusercontent.com/119164734/208984654-060e44fb-2f7c-4ae3-a7f7-00c5640cd7f5.png">
+</p>
+
+- This function calculation is used to find out the least distance from the new data.
+
+#### 2) RandomForest Regression
+
 
 
 
