@@ -180,7 +180,7 @@ Number of Machine algorithm has been used for baseline model to choose the **Low
 - The sub-sample size is controlled with the max_samples parameter if **bootstrap=True (default)**, otherwise the whole dataset is used to build each tree.
 -  It can be used for both Classification and Regression problems in ML. It is based on the concept of **Ensemble learning**.
 
-#### 3) Bagging regression
+#### 3) Bagging Regression
 
 <p align="center">
      <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/209166273-54d764ee-6e01-4708-b440-5a85cab779e5.png">
@@ -190,7 +190,7 @@ Number of Machine algorithm has been used for baseline model to choose the **Low
 - A Bagging regressor is an ensemble meta-estimator that fits base regressors each on **random subsets of the original dataset** and then **aggregate their individual predictions** (either by voting or by averaging) to form a final prediction.
 - Bagging regression is similar to Randomforest regression,but the bootstrap will split into **different model or dataset**
 
-#### 4) Decision Tree regression
+#### 4) Decision Tree Regression
 
 <p align="center">
      <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/209168623-b363f4db-402f-4bb4-a094-21fb581e3e9f.png">
@@ -201,6 +201,20 @@ Number of Machine algorithm has been used for baseline model to choose the **Low
 - It breaks down a dataset into smaller and smaller subsets while at the same time an associated decision tree is incrementally developed. 
 - The final result is a tree with **decision nodes** and **leaf nodes**. 
 - The topmost decision node in a tree ,which corresponds to the best predictor called root node. Decision trees can handle **both categorical and numerical data**.
+
+#### 5) Linear Regression
+
+<p align="center">
+     <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/209169348-b1641f89-1ac6-4aa0-817b-716d1dbfad69.png">
+</p>
+
+- Linear regression analysis is used to predict the value of a variable based on the value of another variable.
+-  The variable you want to predict is called the **dependent variable**. The variable you are using to predict the other variable's value is called the **independent variable**.
+- This form of analysis estimates the coefficients of the linear equation, involving one or more independent variables that best predict the value of the dependent variable.
+- Linear regression fits a straight line or surface that minimizes the discrepancies between predicted and actual output values. 
+- There are simple linear regression calculators that use a **“least squares” method to discover the best-fit line for a set of paired data**. You then estimate the value of **X (dependent variable) from Y (independent variable)**.
+
+
 
 
 
