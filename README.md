@@ -160,7 +160,7 @@ Number of Machine algorithm has been used for baseline model to choose the **Low
 - KNN algorithm can be used for both classification and regression problems. 
 - The KNN algorithm uses ‘feature similarity’ to predict the values of any new data points.
 - If K=3, it will select three values near to them.
-- The average of these data points is the final prediction for the new point. Here, we have weight of ID11 = (77+72+60)/3 = 69.66 kg.
+- The average of these data points is the final prediction for the new point. Here, we have weight of new data (k=3) = (77+72+60)/3 = 69.66 kg.
 - **Euclidean Distance**: Euclidean distance is calculated as the square root of the sum of the squared differences between a new point (x) and an existing point (y).
 
 <p align="center">
@@ -170,6 +170,14 @@ Number of Machine algorithm has been used for baseline model to choose the **Low
 - This function calculation is used to find out the least distance from the new data.
 
 #### 2) RandomForest Regression
+
+<p align="center">
+     <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/209157531-f6ff729a-d2ab-4895-a3d0-f0f829203d95.jpg">
+</p>
+
+
+- A random forest is a meta estimator that fits a number of **classifying decision trees on various sub-samples of the dataset** and uses averaging to improve the predictive accuracy and **control over-fitting**.
+- The sub-sample size is controlled with the max_samples parameter if **bootstrap=True (default)**, otherwise the whole dataset is used to build each tree.
 
 
 
