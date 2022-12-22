@@ -241,7 +241,7 @@ It is meant to find the best parameters to improve a given model.A key differenc
 
 **n_estimators** : This parameter denotes the maximum number of trees in an ensemble/forest.
 
-**max_features* : This represents the maximum number of features taken into consideration when splitting a node.
+**max_features** : This represents the maximum number of features taken into consideration when splitting a node.
 
 **max_depth** : max_depth represents the maximum number of levels that are allowed in each decision tree.
 
@@ -276,6 +276,15 @@ It is meant to find the best parameters to improve a given model.A key differenc
      <img width="500" height="250" src="https://user-images.githubusercontent.com/119164734/209204378-66d041e2-46b7-4851-9be6-dc16f99e82a7.png">
 </p>
                                       
+ # Conclusion:
+ 
+- In this case study the given data was analysed and on top of that a regression model was built.
+
+- It can be found that Enginesize,stroke and curbweight are making the price high in the Amercian Market.
+
+- The model chosen for this case study was a RandomsForest Regression as it was retruning **the least overfitting** and best r2 score on unseen data.
+
+- The r2 score genarated in unseen data was 0.90 which means that the modedl performs really good and is generalizing well on unseen data.
 
 
 
