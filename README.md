@@ -190,6 +190,18 @@ Number of Machine algorithm has been used for baseline model to choose the **Low
 - A Bagging regressor is an ensemble meta-estimator that fits base regressors each on **random subsets of the original dataset** and then **aggregate their individual predictions** (either by voting or by averaging) to form a final prediction.
 - Bagging regression is similar to Randomforest regression,but the bootstrap will split into **different model or dataset**
 
+#### 4) Decision Tree regression
+
+<p align="center">
+     <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/209168623-b363f4db-402f-4bb4-a094-21fb581e3e9f.png">
+</p>
+
+
+- Decision tree regression observes features of an object and trains a model in the structure of a tree to predict data in the future to produce meaningful continuous output. 
+- It breaks down a dataset into smaller and smaller subsets while at the same time an associated decision tree is incrementally developed. 
+- The final result is a tree with **decision nodes** and **leaf nodes**. 
+- The topmost decision node in a tree ,which corresponds to the best predictor called root node. Decision trees can handle **both categorical and numerical data**.
+
 
 
 
