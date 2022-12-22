@@ -151,7 +151,7 @@ A baseline model is essentially a simple model that acts as a reference in a mac
 
 Number of Machine algorithm has been used for baseline model to choose the **Low overfitting**
 
-#### 1) KNeighbors Regression
+### 1) KNeighbors Regression
 
 <p align="center">
      <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/208985398-19f15038-7c46-4ea1-9e91-8780d71c82f2.png">
@@ -169,7 +169,7 @@ Number of Machine algorithm has been used for baseline model to choose the **Low
 
 - This function calculation is used to find out the least distance from the new data.
 
-#### 2) RandomForest Regression
+### 2) RandomForest Regression
 
 <p align="center">
      <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/209158651-a12d3755-ba8f-460b-b947-cb3e93f1b492.png">
@@ -180,7 +180,7 @@ Number of Machine algorithm has been used for baseline model to choose the **Low
 - The sub-sample size is controlled with the max_samples parameter if **bootstrap=True (default)**, otherwise the whole dataset is used to build each tree.
 -  It can be used for both Classification and Regression problems in ML. It is based on the concept of **Ensemble learning**.
 
-#### 3) Bagging Regression
+### 3) Bagging Regression
 
 <p align="center">
      <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/209166273-54d764ee-6e01-4708-b440-5a85cab779e5.png">
@@ -202,7 +202,7 @@ Number of Machine algorithm has been used for baseline model to choose the **Low
 - The final result is a tree with **decision nodes** and **leaf nodes**. 
 - The topmost decision node in a tree ,which corresponds to the best predictor called root node. Decision trees can handle **both categorical and numerical data**.
 
-#### 5) Linear Regression
+### 4) Linear Regression
 
 <p align="center">
      <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/209169348-b1641f89-1ac6-4aa0-817b-716d1dbfad69.png">
@@ -214,8 +214,68 @@ Number of Machine algorithm has been used for baseline model to choose the **Low
 - Linear regression fits a straight line or surface that minimizes the discrepancies between predicted and actual output values. 
 - There are simple linear regression calculators that use a **“least squares” method to discover the best-fit line for a set of paired data**. You then estimate the value of **X (dependent variable) from Y (independent variable)**.
 
+### **Step 1** : Above models are imported and ready for test the train data.
+### **Step 2** : In each model,**X_train and Y_tain has been fitted for prediction**.
+### **Step 3** : Predict the **train data(X_train)** using above model.
+### **Step 4** : R2_score has been used to find out the accuracy of the train and test data.
 
+- **R2_score**: **The proportion of the variance in the dependent variable that is predictable from the independent variable(s)**.
+- **(Total variance explained by model) / total variance)** ,So if it is 100%, the two variables are perfectly correlated.
 
+## Observation:-
+**RandomForest Regression** gives the best **r2 score** and **Low Basis** and **low variance (low overfitting)** among the models, so the RandomForest Regression will be used for **Hyperparameter tunning**.
+
+# Hyperparameter tunning:-
+
+Hyperparameters are parameters whose values control the learning process and determine the values of model parameters that a learning algorithm ends up learning and also used **to find out the best model**.
+
+- We will be using Random Search in order to find the best values.
+
+- We will consider RandomForest Regression as they have given best results.
+
+## RandomizedSearchCV
+
+It is meant to find the best parameters to improve a given model.A key difference is that **it does not test all parameters. Instead, the search is done at random**.
+
+### Random forest parameters
+
+**n_estimators** : This parameter denotes the maximum number of trees in an ensemble/forest.
+
+**max_features* : This represents the maximum number of features taken into consideration when splitting a node.
+
+**max_depth** : max_depth represents the maximum number of levels that are allowed in each decision tree.
+
+**min_samples_split** : To cause a node to split, a minimum number of samples are required in a node. This minimum number of data points is what is represented by to as min_samples_split.
+
+**min_samples_leaf**: The minimum count of data points that can be stored in a leaf node.
+
+**cv=5**:we train a model 5 times using cross-validation.
+
+## Observation:-
+
+- The best model has created by Hyperparameter tunning as a result, the best_model has fitted with X_train and Y_train.
+
+- It occur the best **Hyperparameters: {'n_estimators': 33, 'min_samples_split': 5, 'min_samples_leaf': 1, 
+               'max_features': 'auto', 'max_depth': 4, 'bootstrap': True} **.
+               
+- Train Score: **0.9146482211854652**         [Train_score], random_tuning_model.best_score_
+
+- Validation Score: **0.9691344968856467**  [Validation Score]:", r2_score(Y_train,Y_pre)
+
+# 9) Test data-
+
+- Best_model= **model.best_estimator_(which give a higher score and accuracy)**.
+
+- This model is fitted with X_train and Y_train and prediction is obtained to **X_test**.
+
+- Accuracy of the test data is **0.8899** measure by **R2_score**.
+
+### Submission of Unseen data:
+
+<p align="center">
+     <img width="500" height="250" src="https://user-images.githubusercontent.com/119164734/209204378-66d041e2-46b7-4851-9be6-dc16f99e82a7.png">
+</p>
+                                      
 
 
 
