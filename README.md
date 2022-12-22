@@ -172,12 +172,23 @@ Number of Machine algorithm has been used for baseline model to choose the **Low
 #### 2) RandomForest Regression
 
 <p align="center">
-     <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/209157531-f6ff729a-d2ab-4895-a3d0-f0f829203d95.jpg">
+     <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/209158651-a12d3755-ba8f-460b-b947-cb3e93f1b492.png">
 </p>
 
 
 - A random forest is a meta estimator that fits a number of **classifying decision trees on various sub-samples of the dataset** and uses averaging to improve the predictive accuracy and **control over-fitting**.
 - The sub-sample size is controlled with the max_samples parameter if **bootstrap=True (default)**, otherwise the whole dataset is used to build each tree.
+-  It can be used for both Classification and Regression problems in ML. It is based on the concept of **Ensemble learning**.
+
+#### 3) Bagging regression
+
+<p align="center">
+     <img width="400" height="200" src="https://user-images.githubusercontent.com/119164734/209166273-54d764ee-6e01-4708-b440-5a85cab779e5.png">
+</p>
+
+
+- A Bagging regressor is an ensemble meta-estimator that fits base regressors each on **random subsets of the original dataset** and then **aggregate their individual predictions** (either by voting or by averaging) to form a final prediction.
+- Bagging regression is similar to Randomforest regression,but the bootstrap will split into **different model or dataset**
 
 
 
